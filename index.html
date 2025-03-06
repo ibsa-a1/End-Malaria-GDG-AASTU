@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Malaria</title>
+    <link rel="icon" type="image/jpeg" href="images/logo2-removebg2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo2-removebg2.png" alt="logo">
+        </div>
+        <nav>
+            <div class="menu" id="menu-icon" aria-label="Toggle Navigation Menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">መግቢያ</a></li>
+                <li><a href="#product">ምርታችን</a></li>
+                <li><a href="#aboutus">ስለ እኛ</a></li>
+                <li><a href="#footer">አግኙን</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="main-content">
+            <h2>የወባ ትንኞችን ስርጭት ለመግታት እና እራስዎን ከወባ ለመጠበቅ የእኛን <span style="color: rgb(0, 91, 73);">አውቶማቲክ</span> የወባ ትንኝ  መከላኬያ መርጫ ይጠቀሙ</h2>
+            <button><a href="#product">ይበልጥ ለማወቅ</a></button>
+        </div>
+    </section>
+
+    <section class="product" id="product">
+        <h1>ምርታችንን ይዘዙ</h1>
+        <div class="product-cards">
+            <div class="card">
+                <div class="placeholder-box">
+                    <img src="images/product.png" alt="Product Image">
+                </div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h3>Automate the spraying process</h3>
+                <p>No need for manual labor and extra expenses</p>
+            </div>
+            <article>
+                <div>
+                    <h3 style="color: rgb(17, 79, 43); font-size: 1.3em;">የአጠቃቀም መረጃ</h3>
+                    <div class="image-only">
+                        <img src="images/manual.png" alt="How to use our product">
+                    </div>
+                </div>
+                <div>
+                    <p><span style="color: rgb(0, 91, 73);">2.</span> ለማብራት አና ለማጥፋት</p>
+                    <p><span style="color: rgb(0, 91, 73);">1.</span> የአሰራር ሁኔታ ለመከታተል</p>
+                    <p><span style="color: rgb(0, 91, 73);">3.</span> የማሳያውን ብርሀን ለመጨመር እና ለመቀነስ</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="aboutus" id="aboutus">
+        <div class="aboutus-content">
+            <div class="text-box">
+                <h2>ስለ እኛ</h2>
+                <p>የወባ ስርጭትን በራስ ሰር እና ቀልጣፋ በመታገል የወባ ስርጭትን ለመግታት የሚረዳ አውቶማቲክ የወባ ትንኝ መከላከያ ማሽን በማምረት እና በማከፋፈል ላይ ያተኮረ አዲስ አበባ ላይ የተመሰረተ ቡድን ነን።</p>
+                <button><a href="#footer" class="button">አግኙን</a></button>
+            </div>    
+            <div class="image-box">
+                <img src="images/aboutus.png" alt="aboutus Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="order">
+        <div class="order-content">
+            <div class="placeholder-box">
+                <h2>እራሰወን ከወባ ትንኝ ይከላከሉ</h2>
+                <p>ዛሬውኑ አውቶማቲክ የወባ ትንኝ መከላኬያ መርጫወን ያግኙኙ!</p>
+                <button><a href="#order" >ይዘዙ</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="order">
+        <form>
+            <div class="above-form">
+                <h1>ምርታችንን ይዘዙ</h1>
+            </div>
+            <div class="form-image">
+                <p>የእቃው ምስል</p>
+                <img src="images/aboveform.png" alt="Product Image">
+            </div>
+            <div class="form-grid">
+                <div class="section1">
+                    <label for="identification">የእቃው መለያ</label>
+                    <input type="text" id="identification" placeholder="#On12345" disabled value="#On12345">
+                    <label for="measure">መለኪያ</label>
+                    <input type="text" id="measure placeholder="ቁጥር" disabled value="ቁጥር">
+                </div>
+                <div class="section1">
+                    <label for="quantity">የትእዛዝ ብዛት <span>*</span></label>
+                    <input type="number" id="quantity" placeholder="200" required>
+                    <label for="price">የእያንዳንዱ ዋጋ</label>
+                    <input type="text" id="price" placeholder="250 ETB" disabled value="250 ETB">
+                </div>
+                <div class="section1">
+                    <label for="region">ክልል <span>*</span></label>
+                    <input type="text" id="region" placeholder="አፋር" required>
+                    <label for="zone">ወረዳ <span>*</span></label>
+                    <input type="text" id="zone" placeholder="ዙሩ" required>
+                </div>
+                <div class="section1">
+                    <label for="city">ከተማ <span>*</span></label>
+                    <input type="text" id="city" placeholder="አሳያ" required>
+                    <label for="phone-number">ስልክ ቁጥር <span>*</span></label>
+                    <input type="text" id="phone-number" placeholder="09********45" required>
+                </div>
+            </div>
+            <div class="overall-value">
+                <label for="total-price">ጠቅላላ ዋጋ</label><br>
+                <input type="text" id="total-price" placeholder="NaN" disabled value="NaN">
+            </div>
+            <div class="buttons">
+                <button type="reset" id="button1">ይመለሱ</button>
+                <button type="submit" id="button2">ይዘዙ</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="left-footer">
+            <div class="logo-box">
+                <img src="images/logo2-removebg2.png" alt="logo">
+            </div>
+            <p>ያለስጋት ይኑሩ!</p>
+            <div class="social-icons">
+                 <ul>
+                    <li><i class="fab fa-facebook" aria-label="Facebook"></i></li>
+                    <li><i class="fab fa-linkedin" aria-label="LinkedIn"></i></li>
+                    <li><i class="fab fa-twitter" aria-label="Twitter"></i></li>
+                     <li><i class="fab fa-telegram" aria-label="Telegram"></i></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">መግቢያ</a></li>
+                <li><a href="#product">ምርታችን</a></li>
+                <li><a href="#aboutus">ስለ እኛ</a></li>
+                <li><a href="#footer">አግኙን</a></li>
+            </ul>
+        </nav>
+        <div class="address">
+            <h3>እኛን ለማግኝት</h3>
+            <p>endmalariae@gmail.com</p>
+            <p>www.endmalaria.com</p>
+            <p>+251-9-56-98-21</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+});
+
+const navLinks = document.querySelectorAll('.nav-links a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        const navLinksContainer = document.getElementById('nav-links');
+        navLinksContainer.classList.remove('active'); // Hide the nav links
+    });
+});
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main button {
+        margin-left: 75%;
+    }
+    
+    .card .placeholder-box img{
+        height: 350px;
+    }
+
+    .image-only img {
+        height: 380px; 
+    }
+
+    .text-box{
+        margin-left: 50px;
+    }
+
+    .image-box{
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu {
+        display: block; 
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .main{
+        height: 300px;
+    }
+
+    .main .main-content h2{
+        text-align: center;
+        margin: auto;
+        font-size: 1.5em;
+    }
+
+    .main button{
+        display: block;
+        margin: auto; 
+        justify-content: center;
+    }
+
+
+    .product-cards{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+
+    .product-cards article{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .card .placeholder-box{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .aboutus-content {
+        flex-direction: column; 
+        height: auto; 
+        padding: 30px;
+        text-align: center;
+    }
+
+    .text-box {
+        margin-left: 0; 
+        margin-bottom: 20px;
+    }
+
+    .image-box {
+        margin-right: 0; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-box img {
+        width: 80%; 
+        max-width: 350px;
+    }
+
+    .aboutus button {
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .order{
+        width: 80%;
+    }
+
+    .form-section{
+        width: 40vh;
+    }
+
+    .form-grid{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .footer{
+        height: 600px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-footer{
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .social-icons{
+        margin: auto;
+    }
+
+    .social-icons ul li{
+        margin: auto;
+        padding: 10px;
+        justify-content: center;
+    }
+    
+    .social-icons i {
+        font-size: 20px; 
+    }
+}

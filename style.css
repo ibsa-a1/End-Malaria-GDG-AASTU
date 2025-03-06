@@ -1,0 +1,438 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgb(0, 91, 73);
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.menu{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu .bar{
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+    transition: 0.25s;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    background: url(images/main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+    color: #fff;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main .main-content h2{
+    display: left;
+    margin-left: 55%;
+    font-size: 2em;
+    text-align: end;
+    position: relative;
+}
+
+.main button {
+    padding: 10px 20px;
+    background: rgb(0, 91, 73);
+    border-radius: 100px;
+    font-size: 1.1em;
+    margin-left: 85%;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.main button a{
+    color: #f4f4f4;
+    padding: 5px;
+    size: 1.1em;
+    text-decoration: none;
+}
+
+.product {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(0, 91, 73);
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgb(0, 91, 73);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .placeholder-box {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card .placeholder-box img{
+    width: 100%;
+    height: 330px;
+    border-radius: 10px;
+}
+
+.card i{
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.card h3 {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+    margin-top: 20px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #e8e4e4;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.product-cards article{
+    display: flex;
+}
+
+.image-only {
+    flex: 1;
+}
+
+.image-only img {
+    width: 100%;
+    height: 400px; 
+    border-radius: 5px; 
+}
+
+
+.aboutus h2 {
+    font-size: 2rem;
+}
+
+.aboutus{
+    width: 100%;
+}
+
+.aboutus-content{
+    margin: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 300px;
+    background-color: #f6f8fc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    margin: auto;
+}
+
+.text-box {
+    text-align: unset;
+    margin-left: 125px;
+}
+
+.text-box h2{
+    font-size: 2em;
+    margin-top: 20px;
+    color: rgb(0, 91, 73);
+}
+
+.text-box p{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.aboutus button{
+    background-color: rgb(0, 91, 73);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.aboutus button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.image-box{
+    margin-right: 100px;
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+
+}
+
+.image-box img{
+    width: 450px;
+}
+
+.order {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.order h2 {
+    font-size: 2rem;
+    padding-top: 80px;
+    color: #ffffff;
+}
+
+.order-content .placeholder-box {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(0, 91, 73);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.order-content p {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.order button{
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    border: none;
+}
+.order button a{
+    color: rgb(0, 91, 73);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.form-section{
+    width: 55%;
+    margin: auto;
+    border-radius: 5px;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    margin: auto;
+}
+
+.form-image img{
+    width: 100%;
+    margin: auto;
+}
+.form-section h1{
+    text-align: center;
+    color: rgb(0, 91, 73);
+    font-size: 2em;
+}
+
+.form-section p{
+    margin-bottom: 0;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.section1{
+    margin: auto;
+}
+
+.section1 label{
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.section1 input{
+    font-size: 15px;
+    padding: 10px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+.overall-value label{
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.overall-value input{
+    font-size: 15px;
+    padding: 10px;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+
+.form-section button{
+    font-size: 16px;
+    margin: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.buttons{
+    text-align: center;
+}
+
+.form-section #button1{
+    color: rgb(0, 91, 73);
+    border-style: solid;
+    border-color: rgb(0, 91, 73);
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.form-section #button1:hover{
+    background-color: rgb(0, 91, 73);
+    color: #ffffff;
+}
+
+.form-section #button2{
+    color: #ffffff;
+    border-style: solid;
+    border-color: rgb(0, 91, 73);
+    background-color: rgb(0, 91, 73);
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.form-section #button2:hover{
+    background-color: lightgray;
+    color: rgb(0, 91, 73);
+}
+
+.form-section span{
+    color: red;
+}
+
+.footer {
+    background: rgba(0, 91, 73);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.left-footer{
+    margin-left: 70px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+footer nav ul{
+    display: inline-block;
+}
+
+footer nav li{
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.social-icons ul {
+    display: flex;  
+    list-style: none;
+    padding-left: 0;
+}
+
+.social-icons ul li{
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.social-icons i {
+    font-size: 20px; 
+}
+
+.social-icons i:hover {
+    color: gray; 
+}
+
+.address{
+    margin-right: 100px;
+    padding: 5px;
+}
+.address p{
+    font-size: 0.95em;
+}
