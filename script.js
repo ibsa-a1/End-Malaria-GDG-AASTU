@@ -22,11 +22,39 @@ document.getElementById('quantity').addEventListener('input', function() {
     }
 });
 
-document.getElementById('button2').addEventListener('click', function() {
-    Swal.fire({
-        title: 'Success',
-        text: 'Your order has been placed successfully',
-        icon: 'success',
-        confirmButtonText: 'OK'
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const button2 = document.getElementById("button2");
+
+    button2.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent form from submitting immediately
+
+        // Check required fields manually
+        const quantity = document.getElementById("quantity").value.trim();
+        const region = document.getElementById("region").value.trim();
+        const zone = document.getElementById("zone").value.trim();
+        const city = document.getElementById("city").value.trim();
+        const phone = document.getElementById("phone-number").value.trim();
+
+        if (quantity && region && zone && city && phone) {
+            Swal.fire({
+                title: 'በትዕዛዝዎ ላይ እርግጠኛ ነዎት?',
+                text: "እባክዎ መረጃዎን አረጋግጡ!",
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'ተመለስ',
+                confirmButtonText: 'አዎ ይዘዙ',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    form.submit(); // Manually submit the form if confirmed
+                }
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'መረጃ ያልተሟላ!',
+                text: 'እባክዎ ሁሉንም አስፈላጊ መረጃዎች ያስገቡ።'
+            });
+        }
     });
 });
