@@ -52,6 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         title: 'እንኳን ደስ አልዎት!',
                         text: 'ትዕዛዝዎ በተሳካ ሁኔታ ተልኳል።'
                     });
+                    setTimeout(() => {
+                        form.reset();
+                        document.getElementById('total-price').value = '';
+                    }, 3000);
                 }
             });
         } else {
