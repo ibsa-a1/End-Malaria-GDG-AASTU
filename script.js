@@ -12,6 +12,12 @@ navLinks.forEach(link => {
 });
 
 document.getElementById('quantity').addEventListener('input', function() {
-    const quantity = this.value;
-    document.getElementById('total-price').value = quantity * 250 * ' ETB';
+    const quantity = Number(this.value);
+
+    if (!isNaN(quantity) && quantity > 0) {
+        const total = quantity * 250;
+        document.getElementById('total-price').value = total + ' ETB';
+    } else {
+        document.getElementById('total-price').value = '';
+    }
 });
