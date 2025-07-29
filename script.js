@@ -36,6 +36,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const city = document.getElementById("city").value.trim();
         const phone = document.getElementById("phone-number").value.trim();
 
+        // Correct Phone number
+        const phoneRegex = /^09\d{8}$/;
+         if (!phoneRegex.test(phone)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'የስልክ ቁጥር ስህተት!',
+                text: 'እባክዎ ትክክለኛ የኢትዮጵያ ስልክ ቁጥር ያስገቡ (ለምሳሌ፡ 0912345678)'
+            });
+            return;
+        }
+
         if (quantity && region && zone && city && phone) {
             Swal.fire({
                 title: 'በትዕዛዝዎ ላይ እርግጠኛ ነዎት?',
@@ -55,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     setTimeout(() => {
                         form.reset();
                         document.getElementById('total-price').value = '';
-                    }, 3000);
+                    }, 2500);
                 }
             });
         } else {
