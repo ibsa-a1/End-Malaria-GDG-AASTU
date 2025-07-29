@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
             Swal.fire({
                 icon: 'error',
                 title: 'መረጃ ያልተሟላ!',
-                text: 'እባክዎ ሁሉንም አስፈላጊ መረጃዎች ያስገቡ።'
+                text: 'እባክዎ ሁሉንም አስፈላጊ መረጃዎች ያስገቡ።',
+                confirmButtonText: 'እሺ'
             });
         }
     });
