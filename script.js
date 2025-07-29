@@ -21,3 +21,12 @@ document.getElementById('quantity').addEventListener('input', function() {
         document.getElementById('total-price').value = '';
     }
 });
+
+document.getElementById('button2').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Success',
+        text: 'Your order has been placed successfully',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+});
