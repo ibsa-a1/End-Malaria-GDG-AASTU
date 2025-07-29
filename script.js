@@ -47,6 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }).then((result) => {
                 if (result.isConfirmed) {
                     form.submit(); // Manually submit the form if confirmed
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'እንኳን ደስ አልዎት!',
+                        text: 'ትዕዛዝዎ በተሳካ ሁኔታ ተልኳል።'
+                    });
                 }
             });
         } else {
